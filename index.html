@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Landon Paik
+-->
+<html> 
+    <head>
+        <title>Project 1 - Landon Paik</title>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="controls">
+                    <form name="form1">
+                                <label>First name: </label><input name="firstName" type="text" onchange="nameChange()"><br>
+                                <label>Last name: </label><input name="lastName" type="text" onchange="nameChange()"><br>
+                                <label>Font color: </label><input type="color" name="chooseColor" onchange="colorChange()"><br>
+                                <label>Alignment: </label><select name="alignment" onchange="alignmentChange()">
+                                    <option value="left">Left</option>
+                                    <option value="right">Right</option>
+                                    <option value="center">Centered</option>
+                                    <option value="justify">Justified</option>
+                                </select><br>
+                                <label>Font size: </label><br>
+                                50%<input type="range" name="fontSize" min="50" max="200" value="100" onchange="sizeChange()">200%
+                    </form>
+                </td>
+                <td id="target">
+                    <div id="hello">Hello, <span id="blankName">{name}</span>!</div>
+                    <div id="welcome">Welcome to GUI Lab!</div>
+                </td>
+            </tr>
+        </table>
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>
